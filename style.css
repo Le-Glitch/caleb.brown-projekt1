@@ -1,0 +1,38 @@
+@font-face {
+  font-family: ElMessiri;
+  src: url(./Fonts/ElMessiri-VariableFont_wght.ttf);
+}
+
+#homePage
+{
+  margin-left;
+}
+
+header {
+  display: flex;
+  justify-content: right;
+}
+
+body {
+  background-color: #0f4c5c;
+}
+
+nav {
+  display: flex;
+  background-color: #146c82;
+  padding: .5% 5% .5% 2.5%;
+  width: 80%;
+  font-family: ElMessiri;
+  font-size: 25px;
+  margin-top: 1%;
+}
+
+a {
+  color: #25c7f0;
+  text-decoration: 0;
+  margin-right: 6%;
+}
+
+.currentPage {
+  color: #EB6D1E;
+}
