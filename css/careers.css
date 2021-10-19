@@ -1,11 +1,11 @@
 @font-face {
   font-family: ElMessiri;
-  src: url(./Fonts/ElMessiri-VariableFont_wght.ttf);
+  src: url(/Fonts/ElMessiri-VariableFont_wght.ttf));
 }
 
 #homePage
 {
-  margin-left;
+  margin-left: 10%;
 }
 
 header {
