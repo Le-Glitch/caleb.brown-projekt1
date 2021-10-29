@@ -3,6 +3,12 @@
   src: url(/Fonts/ElMessiri-VariableFont_wght.ttf);
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #5f0f40;
 }
@@ -12,32 +18,68 @@ header {
   align-items: stretch;
 }
 
+footer {
+  background-color: #146c82;
+  position: fixed;
+
+  border-top: solid 5px #0e4958;
+
+  padding: 1%;
+
+  width: 100%;
+  bottom: 0;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0% 5%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
 nav {
   display: flex;
   background-color: #146c82;
   border: solid 5px #0e4958;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 
-  padding: 0.5% 5% 0.5% 2.5%;
-  margin: 0% 1% 0% 1%;
+  padding: 0% 5% 0% 2.5%;
+  margin: 0.5% 1% 0% 1%;
 
-  width: 80%;
+  width: 100%;
 
   font-family: ElMessiri;
   font-size: 32px;
 }
 
-nav a {
+nav div
+{
+  width: 18%;
+  margin-right: 6%;
+  padding: 0.5% 5% 0.5% 5%;
+}
+
+nav div a {
   color: #25c7f0;
   text-decoration: 0;
-  margin-right: 6%;
-  padding: 2% 5% 2% 5%;
 }
 
 nav a:hover {
   color: #b3ebfa;
   background-color: #105668;
+  border: ridge;
   text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 25px #fff;
 }
 
@@ -51,7 +93,5 @@ nav a:hover {
 }
 
 .headerImg {
-  margin-left: 1%;
-  border: solid 5px #0e4958;
-  width: 7.5%;
+  width: 5%;
 }
