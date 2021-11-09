@@ -3,6 +3,10 @@
   src: url(/Fonts/ElMessiri-VariableFont_wght.ttf);
 }
 
+html {
+  overflow-y: scroll;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -10,12 +14,15 @@
 }
 
 body {
-  background-color: #5f0f40;
+  background-color: #0d2b30;
+
+  margin-bottom: 50px;
 }
 
 header {
   display: flex;
   align-items: stretch;
+  justify-content: center;
 }
 
 footer {
@@ -28,11 +35,24 @@ footer {
 
   width: 100%;
   bottom: 0;
+
+  font-size: 1vw;
 }
 
 footer div {
   display: flex;
   justify-content: center;
+}
+
+footer div a {
+  margin-top: 5%;
+}
+
+footer div a button {
+  border: solid;
+  width: 100%;
+
+  padding: 2%;
 }
 
 .copyright {
@@ -46,6 +66,12 @@ footer div {
 .about {
   display: flex;
   flex-direction: column;
+
+  width: 10%;
+}
+
+.about h2 {
+  align-self: center;
 }
 
 nav {
@@ -53,26 +79,31 @@ nav {
   background-color: #146c82;
   border: solid 5px #0e4958;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   padding: 0% 5% 0% 2.5%;
   margin: 0.5% 1% 0% 1%;
 
-  width: 100%;
+  width: 90%;
 
   font-family: ElMessiri;
-  font-size: 32px;
+  font-size: 1.8vw;
 }
 
-nav div {
-  width: 18%;
-  margin-right: 6%;
-  padding: 0.5% 5% 0.5% 5%;
-}
+nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-nav div a {
   color: #25c7f0;
   text-decoration: 0;
+
+  border: ridge transparent;
+
+  width: 10%;
+  height: 80%;
+
+  transition: 300ms ease-in-out;
 }
 
 nav a:hover {
@@ -92,5 +123,5 @@ nav a:hover {
 }
 
 .headerImg {
-  width: 5%;
+  width: 5vw;
 }
