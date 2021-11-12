@@ -41,7 +41,7 @@ footer {
 
 footer div {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 footer div a {
@@ -66,12 +66,44 @@ footer div a button {
 .about {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   width: 10%;
 }
 
 .about h2 {
   align-self: center;
+}
+
+.aboutButtons {
+  width: 150%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+
+
+.aboutButtons a button, .aboutButtons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 2ch;
+
+  text-decoration: none;
+  
+  height: 90%;
+}
+
+
+
+.aboutButtons button{
+  width: 20ch;
+  margin: 0 10%;
+  margin-bottom: 10%;
+
+  background-color: #6A0B82;
 }
 
 nav {
@@ -96,7 +128,7 @@ nav a {
   align-items: center;
 
   color: #25c7f0;
-  text-decoration: 0;
+  text-decoration: none;
 
   border: ridge transparent;
 
@@ -106,14 +138,14 @@ nav a {
   transition: 300ms ease-in-out;
 }
 
-nav a:hover {
+nav a:hover, nav a:focus{
   color: #b3ebfa;
   background-color: #105668;
   border: ridge;
   text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 25px #fff;
 }
 
-.currentPage:hover {
+.currentPage:hover, .currentPage:focus {
   color: #ed7931;
   text-shadow: 0 0 25px #fff, 0 0 25px #fff, 0 0 25px #fff;
 }
