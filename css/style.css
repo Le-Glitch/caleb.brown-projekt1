@@ -384,7 +384,7 @@ nav a:focus {
   flex-direction: column;
   align-items: center;
 
-  width: 25%;
+  width: 30%;
 
   margin-top: 7.5ch;
   padding: 1.5ch;
@@ -427,7 +427,7 @@ nav a:focus {
 
   padding: 1ch 0;
 
-  border-bottom: solid 1px black;
+  border-top: solid 1px black;
 }
 
 .careerPageListing a {
@@ -449,8 +449,4 @@ nav a:focus {
 
   color: white;
   text-shadow: 2px 2px black;
-}
-
-#finalJobListing {
-  border-bottom: none;
 }
