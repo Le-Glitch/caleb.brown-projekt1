@@ -3,6 +3,11 @@
   src: url(/Fonts/ElMessiri-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: GenmunuLibre;
+  src: url(/Fonts/GenmunuLibre-VariableFont_wght.ttf);
+}
+
 html {
   overflow-y: scroll;
 }
@@ -121,7 +126,7 @@ nav {
   justify-content: space-around;
 
   padding: 0% 5% 0% 2.5%;
-  margin: 0.5% 1% 0% 1%;
+  margin: 20px 0 0 0;
 
   width: 90%;
 
@@ -168,26 +173,284 @@ nav a:focus {
 }
 
 .article {
+  display: flex;
+  flex-direction: column;
   background-color: #146c82;
   color: white;
   text-shadow: 2px 2px black;
 
-  width: 65%;
-  
+  width: 90%;
+
   border: #0e4958 solid;
   border-width: 5px;
-  
-  margin: 4% 0 -2% 5%;
+
+  margin: 60px 0 0 95px;
   padding: 1%;
 }
 
-.article h1 {
+.article a {
   font-family: ElMessiri;
   font-size: 1.8vw;
-  padding-bottom: 2%;
+  color: white;
+
+  text-decoration: none;
+}
+
+.article p {
+  font-family: GenmunuLibre;
+  font-size: vw;
 }
 
 .footer-holder {
   position: relative;
 }
 
+.main {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.newsMain {
+  display: flex;
+  flex-direction: column;
+}
+
+.indexCareers {
+  background-color: #146c82;
+  border: solid #0e4958;
+  border-width: 5px;
+
+  margin: 60px 95px 0 0;
+  padding: 2em;
+
+  width: 75%;
+}
+
+.indexCareers h1 {
+  font-size: 1.5vw;
+}
+
+.jobListing a {
+  font-family: GenmunuLibre;
+  font-size: 1.25vw;
+
+  text-decoration: none;
+  color: #d9f5fd;
+}
+
+.jobListing h4 {
+  display: flex;
+  justify-content: center;
+
+  color: #ecfafe;
+  background-color: black;
+
+  width: fit-content;
+
+  border-radius: 2ch;
+
+  margin-top: 1ch;
+  padding: 2%;
+}
+
+.jobListing {
+  margin-top: 15px;
+  padding: 2% 0 2% 0;
+
+  transition: 150ms ease-in-out;
+}
+
+.jobListing a,
+.jobListing h4 {
+  margin-left: 2%;
+}
+
+.jobListing:hover {
+  background-color: rgba(183, 206, 221, 0.42);
+}
+
+.jobListingLabel {
+  font-size: 0.75vw;
+  padding-left: 5px;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #b3ebfa;
+}
+
+.errorMajor {
+  font-size: 10ch;
+}
+
+.errorMinor {
+  font-size: 5ch;
+}
+
+.errorHomeButton {
+  background-color: #105668;
+  border-radius: 2ch;
+
+  color: #b3ebfa;
+  font-size: 7.5ch;
+  text-decoration: none;
+
+  margin-top: 15%;
+  padding: 1.25% 2.5%;
+}
+
+.gameMain {
+  display: flex;
+
+  margin-top: 15ch;
+  margin-left: 95px;
+
+  width: 90%;
+
+  background-color: #146c82;
+  border: solid #0e4958 5px;
+}
+
+.gameInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  color: white;
+  text-shadow: 2px 2px black;
+
+  padding: 0 3ch;
+  margin: 2ch 0;
+}
+
+.gameinfo h5 {
+  font-size: 2ch;
+}
+
+.gameInfo p {
+  margin-bottom: 0.5ch;
+
+  font-size: 5ch;
+}
+
+.gameImg {
+  border-left: solid #0e4958 5px;
+
+  width: 40%;
+}
+
+.newsText {
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  text-shadow: 2px 2px black;
+
+  margin-left: 1%;
+}
+
+.newsText a {
+  text-decoration: none;
+  color: white;
+
+  font-size: 36px;
+}
+
+.newsImg {
+  width: 15ch;
+  border: solid 2px #23292b;
+}
+
+.articleNews {
+  display: flex;
+  background-color: #146c82;
+
+  width: 90%;
+
+  border: #0e4958 solid;
+  border-width: 5px;
+
+  margin: 60px 0 0 95px;
+  padding: 1%;
+}
+
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 25%;
+
+  margin-top: 7.5ch;
+  padding: 1.5ch;
+
+  background-color: #146c82;
+  border: #0e4958 solid 5px;
+
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.careersMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.careerOpenings {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 5ch;
+
+  width: 75%;
+
+  background-color: #146c82;
+  border: #0e4958 solid 5px;
+
+  padding: 1.5ch;
+}
+
+.careerPageListing {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 25px;
+
+  color: white;
+  text-shadow: 2px 2px black;
+
+  padding: 1ch 0;
+
+  border-bottom: solid 1px black;
+}
+
+.careerPageListing a {
+  text-decoration: none;
+
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.topLabels {
+  padding: 1ch 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 20px;
+
+  width: 100%;
+
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+#finalJobListing {
+  border-bottom: none;
+}
