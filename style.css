@@ -1,11 +1,11 @@
 @font-face {
   font-family: ElMessiri;
-  src: url(/Fonts/ElMessiri-VariableFont_wght.ttf);
+  src: url(Fonts/ElMessiri-VariableFont_wght.ttf);
 }
 
 @font-face {
   font-family: GenmunuLibre;
-  src: url(/Fonts/GenmunuLibre-VariableFont_wght.ttf);
+  src: url(Fonts/GenmunuLibre-VariableFont_wght.ttf);
 }
 
 html {
